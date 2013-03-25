@@ -24,20 +24,27 @@
             <div class="centered title">Photo Nº<span>1</span></div>
 
             <nav class="right">
-                <a href="#" data-action="carousel" data-direction="left" data-icon="left" class="button"></a>
-                <a href="#" data-action="carousel" data-direction="right" data-icon="right" class="button"></a>
+                <a href="#" id="left" data-action="carousel" data-direction="left" data-icon="left" class="button"></a>
+                <a href="#" id="right" data-action="carousel" data-direction="right" data-icon="right" class="button"></a>
             </nav>
         </header>
         <article id="carousel-article" class="active block" data-control="carousel">
             <div>
                 <div align="center">
-                    <img src="http://lorempixel.com/320/418/food/" />
+                    <a hred="#" class="button">1</a>
+                    <a hred="#" class="button">2</a>
+                    <a hred="#" class="button">3</a>
                 </div>
                 <div align="center">
-                    <img src="http://lorempixel.com/320/418/sports/">
+                    <a hred="#" class="button">4</a>
+                    <a hred="#" class="button">5</a>
+                    <a hred="#" class="button">6</a>                    
+                    
                 </div>
                 <div align="center">
-                    <img src="http://lorempixel.com/320/418/people/">
+                    <a hred="#" class="button">7</a>
+                    <a hred="#" class="button">6</a>
+                    <a hred="#" class="button">8</a>
                 </div>
                 <div align="center">
                     <img src="http://lorempixel.com/320/418/abstract/">
@@ -71,8 +78,7 @@
     <script>
         Lungo.init({
             name: 'Carousel Example'
-        });
-        App.carousel = {prev: null, next: null};
+        });        
     </script>
 </body>
 </html>
