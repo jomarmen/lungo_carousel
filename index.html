@@ -16,50 +16,56 @@
     <link rel="stylesheet" href="components/lungo/lungo.icon.css">
     <link rel="stylesheet" href="components/lungo/lungo.icon.brand.css">
     <link rel="stylesheet" href="components/lungo/theme.lungo.css">
+
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
 </head>
 
 <body class="app">
     <section id="carousel" data-transition="slide" class="show">
-        <header data-back="home">
+        <header>
             <div class="centered title">Photo Nº<span>1</span></div>
         </header>
         <article id="carousel-article" class="active block">
             <form>
                 <fieldset data-icon="tag">
                     <input type="text" placeholder="Tap to add tag">
-                </fieldset>
-                <fieldset style="padding: 10px">
-                    <div data-control="carousel" >
-                        <div>
-                            <div align="center">
-                                <a hred="#" class="button">luz</a>
-                                <a hred="#" class="button">gasolina</a>
-                                <a hred="#" class="button">agua</a>
-                                <a hred="#" class="button">luz</a>
-                                <a hred="#" class="button">gasolina</a>
-                                <a hred="#" class="button">agua</a>                                
-                            </div>
-                            <div align="center">
-                                <a hred="#" class="button">compra</a>
-                                <a hred="#" class="button">super</a>
-                                <a hred="#" class="button">mercadona</a>
-                                <a hred="#" class="button">compra</a>
-                                <a hred="#" class="button">super</a>
-                                <a hred="#" class="button">mercadona</a>                                
-                            </div>
-                            <div align="center">
-                                <a hred="#" class="button">compra</a>
-                                <a hred="#" class="button">super</a>
-                                <a hred="#" class="button">mercadona</a>
-                                <a hred="#" class="button">luz</a>
-                                <a hred="#" class="button">gasolina</a>
-                                <a hred="#" class="button">agua</a>                                
-                            </div> 
-                        </div>                                                                
-                    </div>
-                </fieldset>
-                <a href="#" data-action="carousel" data-direction="left" data-icon="left" class="button"></a>
-                <a href="#" data-action="carousel" data-direction="right" data-icon="right" class="button"></a>                   
+                </fieldset>                
+                <div id="carousel" data-control="carousel" style="background: none repeat scroll 0 0 #FFFFFF; border-bottom: 1px solid #EEEEEE;" >
+                    <div>
+                        <div align="center">
+                            <a hred="#" class="button">1</a>
+                            <a hred="#" class="button">2</a>
+                            <a hred="#" class="button">3</a>
+                            <a hred="#" class="button">4</a>
+                            <a hred="#" class="button">5</a>
+                            <a hred="#" class="button">6</a>                                
+                        </div>
+                        <div align="center">
+                            <a hred="#" class="button">7</a>
+                            <a hred="#" class="button">8</a>
+                            <a hred="#" class="button">9</a>
+                            <a hred="#" class="button">10</a>
+                            <a hred="#" class="button">11</a>
+                            <a hred="#" class="button">12</a>                                
+                        </div>
+                        <div align="center">
+                            <a hred="#" class="button">13</a>
+                            <a hred="#" class="button">14</a>
+                            <a hred="#" class="button">15</a>
+                            <a hred="#" class="button">17</a>
+                            <a hred="#" class="button">18</a>
+                            <a hred="#" class="button">19</a>                                
+                        </div> 
+                    </div>       
+
+                    <ul class="" style="display: block;">
+                        <li class="prev"><a href="#" data-action="carousel" data-direction="left" data-icon="left" class="button small"></a></li>
+                        <li class="selected"><a href="#0" class="bullet">o</a></li>
+                        <li class=""><a href="#1" class="bullet">o</a></li>
+                        <li class=""><a href="#2" class="bullet">o</a></li>
+                        <li class="next"><a href="#" data-action="carousel" data-direction="right" data-icon="right" class="button small"></a></li>
+                    </ul>                             
+                </div>
             </form>
            
         </article>
