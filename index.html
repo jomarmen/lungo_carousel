@@ -21,8 +21,25 @@
 </head>
 
 <body class="app">
-    <section id="carousel" data-transition="slide" class="show">
+    <section id="main" class="show">
         <header>
+            <nav class="left">
+                <a href="#features" data-router="aside" data-icon="left"></a>
+            </nav>
+            <nav class="right">
+                <a href="#carousel" data-router="section" class="button" data-label="form"></a>
+            </nav>
+        </header>
+        <article class="active">
+            First
+        </article>
+    </section>
+    <section id="carousel" data-transition="slide">
+        <header>
+            <nav>
+                <a href="#back" data-router="section" data-icon="multiply" class="button"></a>
+                <a href="#back" data-router="section" data-icon="check" class="button"></a>
+            </nav>
             <div class="centered title">Photo Nº<span>1</span></div>
         </header>
         <article id="carousel-article" class="active block">
@@ -67,9 +84,37 @@
                     </ul>                             
                 </div>
             </form>
-           
+           <a href="#section" data-router="section" data-label="section" class="button"></a>
         </article>
     </section>
+
+    <section id="section">
+        <header>
+            <nav>
+                <a href="#back" data-router="section" class="button" data-label="Back"></a>
+            </nav>
+        </header>
+        <article class="active">
+            <H1>Article>
+        </article>
+    </section>
+
+    <aside id="features">
+        <header data-title="Options"></header>
+        <article class="list active">
+                <li class="active">
+                    <a href="#carousel" data-router="section">
+                        <strong>home</strong>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#section" data-router="section">
+                        <strong>Section</strong>
+                    </a>
+                </li>
+        <article>
+    </aside>
 
     <!-- Lungo - Dependencies -->
     <script src="components/QuoJS/quo.js"></script>
